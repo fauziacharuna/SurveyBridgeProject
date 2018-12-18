@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "391190278277",
+    "firebase_url": "https://androbridgejson.firebaseio.com",
+    "project_id": "androbridgejson",
+    "storage_bucket": "androbridgejson.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391190278277:android:0b67acbbcb869a4a",
+        "android_client_info": {
+          "package_name": "com.example.fauziachmadharuna.surveybridgeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391190278277-okj2lg1fk069gmi8o4ng32tr0oavo82a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fauziachmadharuna.surveybridgeproject",
+            "certificate_hash": "11bee3f5e5463b7b7f9a53ec12fe406b25588748"
+          }
+        },
+        {
+          "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG0PBN7qzdITyNxT5Co_EvZYttMrmmQy0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391190278277:android:ad4c636a793ee862",
+        "android_client_info": {
+          "package_name": "com.farifam.kotlinfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391190278277-0hm7mra9re907h2ceebthnua2pa2gn6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farifam.kotlinfirestore",
+            "certificate_hash": "11bee3f5e5463b7b7f9a53ec12fe406b25588748"
+          }
+        },
+        {
+          "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG0PBN7qzdITyNxT5Co_EvZYttMrmmQy0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
