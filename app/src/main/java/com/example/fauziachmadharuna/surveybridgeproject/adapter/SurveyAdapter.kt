@@ -30,9 +30,13 @@ class SurveyAdapter(
 
     override fun onBindViewHolder(holder: SurveyAdapter.ViewHolder, position: Int) {
         val survey = surveyList[position]
-        holder!!.bridgeName.text=survey.bridgeName
+
+        holder.bridgeName.text=survey.bridgeName
         holder.bridgeLocation.text=survey.bridgeLocation
         holder.kerusakan.text=survey.kerusakan
+
+        holder.edit.setOnClickListener{updateSurvey(survey)}
+        holder.delete.setOnClickListener{deleteSurvey(survey.id!!,position)}
 
     }
 
@@ -59,7 +63,7 @@ class SurveyAdapter(
     private fun updateSurvey(survey : SurveyModel){
         val intent= Intent(context, SurveyActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        intent.putExtra("UpdateSurveyID", survey.id)
+//        intent.putExtra("UpdateSurveyID", survey.id)
         intent.putExtra("UpdateBridgeName", survey.bridgeName)
         intent.putExtra("UpdateBridgeLocation",survey.bridgeLocation)
         intent.putExtra("UpdateSurveyorName",survey.surveyorName)
@@ -78,6 +82,7 @@ class SurveyAdapter(
                 surveyList.removeAt(position)
                 notifyItemRemoved(position)
                 notifyItemRangeChanged(position,surveyList.size)
+
                 Toast.makeText(context,"Survey has been deleted!",Toast.LENGTH_SHORT).show()
             }
     }

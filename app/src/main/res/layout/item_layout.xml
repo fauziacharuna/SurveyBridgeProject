@@ -18,12 +18,14 @@
                           android:orientation="vertical">
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                           android:id="@+id/tvBridgeName"
+                          android:text="Bridge Name"
                           android:padding="5dp"
                           android:textColor="@color/colorPrimary"
                           android:textSize="18sp"/>
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                           android:id="@+id/tvBridgeLocation"
                           android:padding="5dp"
+                          android:text="bridge Location"
                           android:textSize="12sp"/>
 
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"

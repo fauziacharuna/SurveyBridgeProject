@@ -11,10 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.fauziachmadharuna.surveybridgeproject.adapter.SurveyAdapter
 import com.example.fauziachmadharuna.surveybridgeproject.model.SurveyModel
-import com.google.firebase.firestore.DocumentSnapshot
-import com.google.firebase.firestore.EventListener
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ListenerRegistration
+import com.google.firebase.firestore.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class SurveyList : AppCompatActivity() {
@@ -29,6 +26,8 @@ class SurveyList : AppCompatActivity() {
         setContentView(R.layout.survey_list_activity)
 
         firestoreDB = FirebaseFirestore.getInstance()
+
+        loadSurveyList()
 
         firestoreListener = firestoreDB!!.collection("SUrveyBridge")
             .addSnapshotListener(EventListener { documentSnapshot, e ->
@@ -81,6 +80,7 @@ class SurveyList : AppCompatActivity() {
 
 
             }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

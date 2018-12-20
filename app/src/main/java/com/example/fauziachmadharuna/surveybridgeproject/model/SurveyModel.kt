@@ -10,12 +10,11 @@ class SurveyModel {
     var subKomponen : String?=null
     var bahan : String?=null
     var kerusakan : String?=null
-    var tags : List<String>? =null
 
 
     constructor() {}
 
-    constructor(id: String, bridgeName: String, bridgeLocation: String, surveyorName: String, sistem: String, komponen : String, subKomponen : String, bahan : String, kerusakan : String,tags:List<String>) {
+    constructor(id: String, bridgeName: String, bridgeLocation: String, surveyorName: String, sistem: String, komponen : String, subKomponen : String, bahan : String, kerusakan : String) {
         this.id = id
         this.bridgeName = bridgeName
         this.bridgeLocation = bridgeLocation
@@ -25,10 +24,9 @@ class SurveyModel {
         this.subKomponen=subKomponen
         this.bahan=bahan
         this.kerusakan=kerusakan
-        this.tags=tags
     }
 
-    constructor(bridgeName: String, bridgeLocation: String, surveyorName: String, sistem: String,komponen : String, subKomponen : String, bahan : String, kerusakan : String, tags: List<String>) {
+    constructor(bridgeName: String, bridgeLocation: String, surveyorName: String, sistem: String,komponen : String, subKomponen : String, bahan : String, kerusakan : String) {
 
         this.bridgeName = bridgeName
         this.bridgeLocation = bridgeLocation
@@ -38,7 +36,6 @@ class SurveyModel {
         this.subKomponen=subKomponen
         this.bahan=bahan
         this.kerusakan=kerusakan
-        this.tags=tags
     }
     fun toMap() : Map<String, Any>{
         val result = HashMap<String, Any>()
@@ -50,7 +47,6 @@ class SurveyModel {
         result.put("SubKomponen", subKomponen!!)
         result.put("Bahan", bahan!!)
         result.put("Kerusakan", kerusakan!!)
-        result.put("Tags",tags!!)
 
         return result
     }
