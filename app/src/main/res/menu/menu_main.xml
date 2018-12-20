@@ -3,7 +3,7 @@
       xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-            android:id="@+id/add_Note"
+            android:id="@+id/addSurvey"
             android:icon="@drawable/ic_add_circle_black_24dp"
             android:title="Add"
             app:showAsAction="ifRoom" />

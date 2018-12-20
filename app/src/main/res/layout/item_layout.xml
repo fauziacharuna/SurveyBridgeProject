@@ -19,19 +19,17 @@
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                           android:id="@+id/tvBridgeName"
                           android:padding="5dp"
-                          android:text="Bridge Name"
                           android:textColor="@color/colorPrimary"
                           android:textSize="18sp"/>
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                           android:id="@+id/tvBridgeLocation"
                           android:padding="5dp"
-                          android:text="Bridge Location"
                           android:textSize="12sp"/>
 
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                          android:id="@+id/tvSurveyorName"
+                          android:id="@+id/tv_kerusakan"
                           android:padding="5dp"
-                          android:text="SurveyorName"
+                          android:text=""
                           android:textSize="12sp"/>
             </LinearLayout>
             <LinearLayout

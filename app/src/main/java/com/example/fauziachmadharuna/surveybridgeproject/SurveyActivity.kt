@@ -37,6 +37,7 @@ class SurveyActivity : AppCompatActivity() {
             et_subKomponen.setText(bundle.getString("UpdateSubKomponen"))
             et_bahan.setText(bundle.getString("UpdateBahan"))
             et_kerusakan.setText(bundle.getString("UpdateKerusakan"))
+            et_tags.setText(bundle.getString("UpdateTags"))
 
         }
             val clickListener = View.OnClickListener { view ->
@@ -48,6 +49,10 @@ class SurveyActivity : AppCompatActivity() {
                 val subKomponen = et_subKomponen.text.toString()
                 val bahan = et_bahan.text.toString()
                 val kerusakan = et_kerusakan.text.toString()
+                val tags=et_tags.text.toString()
+                val tagList: List<String> = tags.split("\\s*,\\s*")
+                tagList.toMutableList()
+
                 when (view.id) {
 
                     R.id.btn_Add -> addSurvey(
@@ -58,7 +63,7 @@ class SurveyActivity : AppCompatActivity() {
                         komponen,
                         subKomponen,
                         bahan,
-                        kerusakan
+                        kerusakan,tagList
                     )
                     R.id.btn_Update -> updateSurvey(
                         id,
@@ -69,7 +74,7 @@ class SurveyActivity : AppCompatActivity() {
                         komponen,
                         subKomponen,
                         bahan,
-                        kerusakan
+                        kerusakan,tagList
                     )
                 }
             }
@@ -94,7 +99,7 @@ class SurveyActivity : AppCompatActivity() {
         komponen: String,
         subKomponen: String,
         bahan: String,
-        kerusakan: String
+        kerusakan: String,tagList: List<String>
     ) {
         val survey = SurveyModel(
             id,
@@ -105,7 +110,7 @@ class SurveyActivity : AppCompatActivity() {
             komponen,
             subKomponen,
             bahan,
-            kerusakan
+            kerusakan,tagList
         ).toMap()
 
         firestoreDB!!.collection("SUrveyBridge")
@@ -129,7 +134,7 @@ class SurveyActivity : AppCompatActivity() {
         komponen: String,
         subKomponen: String,
         bahan: String,
-        kerusakan: String
+        kerusakan: String, tagList: List<String>
     ) {
         val survey = SurveyModel(
             bridgeName,
@@ -139,10 +144,12 @@ class SurveyActivity : AppCompatActivity() {
             komponen,
             subKomponen,
             bahan,
-            kerusakan
+            kerusakan,tagList
         ).toMap()
-
+        var data : String = ""
+        
         firestoreDB!!.collection("SUrveyBridge")
+
             .add(survey)
             .addOnSuccessListener { documentReference ->
                 Log.e(TAG, "DocumentSnapshot writted with ID : " + documentReference.id)
