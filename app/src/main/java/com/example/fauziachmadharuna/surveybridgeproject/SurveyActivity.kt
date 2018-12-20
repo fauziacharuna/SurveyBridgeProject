@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.Toast
 import com.example.fauziachmadharuna.surveybridgeproject.model.SurveyModel
 import com.google.firebase.firestore.FirebaseFirestore
@@ -14,6 +15,7 @@ import kotlinx.android.synthetic.main.item_layout.*
 
 class SurveyActivity : AppCompatActivity() {
     private val TAG = "AddSurveyActivity"
+
 
     private var firestoreDB: FirebaseFirestore? = null
 
@@ -37,6 +39,7 @@ class SurveyActivity : AppCompatActivity() {
             et_subKomponen.setText(bundle.getString("UpdateSubKomponen"))
             et_bahan.setText(bundle.getString("UpdateBahan"))
             et_kerusakan.setText(bundle.getString("UpdateKerusakan"))
+//            et_tags.setText(bundle.getString("UpdateTags"))
 
         }
             val clickListener = View.OnClickListener { view ->
@@ -48,6 +51,10 @@ class SurveyActivity : AppCompatActivity() {
                 val subKomponen = et_subKomponen.text.toString()
                 val bahan = et_bahan.text.toString()
                 val kerusakan = et_kerusakan.text.toString()
+//                val tags=et_tags.text.toString()
+//                val tagList: List<String> = tags.split("\\s*,\\s*")
+//                tagList.toMutableList()
+
                 when (view.id) {
 
                     R.id.btn_Add -> addSurvey(
@@ -141,11 +148,14 @@ class SurveyActivity : AppCompatActivity() {
             bahan,
             kerusakan
         ).toMap()
+        var data : String = ""
 
         firestoreDB!!.collection("SUrveyBridge")
+
             .add(survey)
             .addOnSuccessListener { documentReference ->
                 Log.e(TAG, "DocumentSnapshot writted with ID : " + documentReference.id)
+
                 Toast.makeText(applicationContext, "Survey been added! ", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener { e ->

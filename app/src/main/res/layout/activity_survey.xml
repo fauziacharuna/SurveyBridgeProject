@@ -14,10 +14,12 @@
                       android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:padding="15dp">
+
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:textColor="@color/colorPrimary"
                       android:text="Identity Section"
                       android:textSize="16sp"/>
+
             <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/et_bridgeName"
                     android:layout_width="match_parent"
@@ -73,46 +75,46 @@
                       android:text="Questionnaire Section"
                       android:textSize="16sp"/>
             <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_sistem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:met_maxCharacters="100"
-            app:met_floatingLabelAnimating="true"
-            app:met_primaryColor="@color/colorPrimaryDark"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Sistem"
-            android:layout_marginTop="5dp"
-            app:met_floatingLabelTextColor="@color/labelFloat"
-            android:inputType="textPersonName"/>
+                    android:id="@+id/et_sistem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_maxCharacters="100"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Sistem"
+                    android:layout_marginTop="5dp"
+                    app:met_floatingLabelTextColor="@color/labelFloat"
+                    android:inputType="textPersonName"/>
             <!--<android.support.design.card.MaterialCardView android:layout_width="match_parent"-->
-                                                          <!--android:layout_height="wrap_content" android:id="@+id/cv_sistem" app:cardCornerRadius="10dp">-->
-                <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">-->
-                <!--<TextView android:layout_width="match_parent" android:layout_height="wrap_content"-->
-                          <!--android:textColor="@color/fbutton_color_orange"-->
-                          <!--android:text="Sistem Jembatan?"-->
-                          <!--android:textSize="12sp"/>-->
-                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-                          <!--android:id="@+id/cb_sistem_ba" android:text="@string/BangunanAtas"/>-->
-                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-                          <!--android:id="@+id/cb_sistem_bb" android:text="@string/BangunanBawah"/>-->
-                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-                          <!--android:id="@+id/cb_sistem_al" android:text="@string/Aliran"/>-->
-                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-                          <!--android:id="@+id/cb_sistem_pl" android:text="@string/Pelengkap"/>-->
-                <!--</LinearLayout>-->
+            <!--android:layout_height="wrap_content" android:id="@+id/cv_sistem" app:cardCornerRadius="10dp">-->
+            <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/fbutton_color_orange"-->
+            <!--android:text="Sistem Jembatan?"-->
+            <!--android:textSize="12sp"/>-->
+            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cb_sistem_ba" android:text="@string/BangunanAtas"/>-->
+            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cb_sistem_bb" android:text="@string/BangunanBawah"/>-->
+            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cb_sistem_al" android:text="@string/Aliran"/>-->
+            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cb_sistem_pl" android:text="@string/Pelengkap"/>-->
+            <!--</LinearLayout>-->
             <!--</android.support.design.card.MaterialCardView>-->
             <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_komponen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:met_maxCharacters="100"
-            app:met_floatingLabelAnimating="true"
-            app:met_primaryColor="@color/colorPrimaryDark"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Komponen"
-            android:layout_marginTop="5dp"
-            app:met_floatingLabelTextColor="@color/labelFloat"
-            android:inputType="textPersonName"/>
+                    android:id="@+id/et_komponen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_maxCharacters="100"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Komponen"
+                    android:layout_marginTop="5dp"
+                    app:met_floatingLabelTextColor="@color/labelFloat"
+                    android:inputType="textPersonName"/>
 
             <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/et_subKomponen"
