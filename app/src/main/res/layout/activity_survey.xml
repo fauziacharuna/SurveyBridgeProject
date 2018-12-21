@@ -1,185 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fbutton="http://schemas.android.com/tools"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="vertical"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:padding="15dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <include layout="@layout/toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                       android:orientation="vertical"
                       android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:padding="15dp">
 
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/colorPrimary"
-                      android:text="Identity Section"
-                      android:textSize="16sp"/>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:padding="15dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_bridgeName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_floatingLabelText="Bridge Name"
-                    app:met_singleLineEllipsis="true"
-                    android:requiresFadingEdge="horizontal"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    android:layout_marginTop="5dp"
-                    app:met_maxCharacters="100"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textPersonName"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:textColor="@color/colorPrimary"
+                          android:text="Identity Section"
+                          android:textSize="16sp"/>
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_bridgeLocation"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_floatingLabelText="Bridge Location"
-                    android:layout_marginTop="5dp"
-                    app:met_singleLineEllipsis="true"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textMultiLine"/>
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_surveyorName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_singleLineEllipsis="true"
-                    app:met_floatingLabelText="Surveyor Name"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_floatingLabel="highlight"
-                    android:layout_marginTop="5dp"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textPersonName"/>
-        </LinearLayout>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_bridgeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_floatingLabelText="Bridge Name"
+                        app:met_singleLineEllipsis="true"
+                        android:requiresFadingEdge="horizontal"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="5dp"
+                        app:met_maxCharacters="100"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textPersonName"/>
 
-        <View android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-        </View>
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                      android:orientation="vertical"
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:padding="15dp">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_bridgeLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_floatingLabelText="Bridge Location"
+                        android:layout_marginTop="5dp"
+                        app:met_singleLineEllipsis="true"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textMultiLine"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_surveyorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_singleLineEllipsis="true"
+                        app:met_floatingLabelText="Surveyor Name"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_floatingLabel="highlight"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textPersonName"/>
+            </LinearLayout>
 
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/colorPrimary"
-                      android:text="Questionnaire Section"
-                      android:textSize="16sp"/>
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_sistem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_maxCharacters="100"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelText="Sistem"
-                    android:layout_marginTop="5dp"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textPersonName"/>
-            <!--<android.support.design.card.MaterialCardView android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content" android:id="@+id/cv_sistem" app:cardCornerRadius="10dp">-->
-            <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">-->
-            <!--<TextView android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:textColor="@color/fbutton_color_orange"-->
-            <!--android:text="Sistem Jembatan?"-->
-            <!--android:textSize="12sp"/>-->
-            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:id="@+id/cb_sistem_ba" android:text="@string/BangunanAtas"/>-->
-            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:id="@+id/cb_sistem_bb" android:text="@string/BangunanBawah"/>-->
-            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:id="@+id/cb_sistem_al" android:text="@string/Aliran"/>-->
-            <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:id="@+id/cb_sistem_pl" android:text="@string/Pelengkap"/>-->
-            <!--</LinearLayout>-->
-            <!--</android.support.design.card.MaterialCardView>-->
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_komponen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_maxCharacters="100"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelText="Komponen"
-                    android:layout_marginTop="5dp"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textPersonName"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+            </View>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:padding="15dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_subKomponen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelText="Sub Komponen"
-                    android:layout_marginTop="5dp"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textPersonName"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:textColor="@color/colorPrimary"
+                          android:text="Questionnaire Section"
+                          android:textSize="16sp"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_sistem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_maxCharacters="100"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Sistem"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textPersonName"/>
+                <!--<android.support.design.card.MaterialCardView android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" android:id="@+id/cv_sistem" app:cardCornerRadius="10dp">-->
+                <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">-->
+                <!--<TextView android:layout_width="match_parent" android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/fbutton_color_orange"-->
+                <!--android:text="Sistem Jembatan?"-->
+                <!--android:textSize="12sp"/>-->
+                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+                <!--android:id="@+id/cb_sistem_ba" android:text="@string/BangunanAtas"/>-->
+                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+                <!--android:id="@+id/cb_sistem_bb" android:text="@string/BangunanBawah"/>-->
+                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+                <!--android:id="@+id/cb_sistem_al" android:text="@string/Aliran"/>-->
+                <!--<CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"-->
+                <!--android:id="@+id/cb_sistem_pl" android:text="@string/Pelengkap"/>-->
+                <!--</LinearLayout>-->
+                <!--</android.support.design.card.MaterialCardView>-->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_komponen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_maxCharacters="100"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Komponen"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textPersonName"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_subKomponen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Sub Komponen"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textPersonName"/>
 
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_bahan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelText="Bahan"
-                    android:layout_marginTop="5dp"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textPersonName"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_bahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Bahan"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textPersonName"/>
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/et_kerusakan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/colorPrimaryDark"
-                    app:met_floatingLabel="highlight"
-                    app:met_floatingLabelText="Kerusakan"
-                    android:layout_marginTop="5dp"
-                    app:met_floatingLabelTextColor="@color/labelFloat"
-                    android:inputType="textMultiLine"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_kerusakan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Kerusakan"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        android:inputType="textMultiLine"/>
 
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="horizontal" android:gravity="center_horizontal">
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:gravity="center_horizontal">
 
-            <com.dd.processbutton.FlatButton
-                    android:id="@+id/btn_Update"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textColor="@android:color/white"
-                    app:pb_colorNormal="@color/fbutton_color_green_sea"
-                    app:pb_colorPressed="@color/colorPrimaryDark"
-                    app:pb_cornerRadius="10dp"
-                    android:text="Update"/>
+                <com.dd.processbutton.FlatButton
+                        android:id="@+id/btn_Update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@android:color/white"
+                        app:pb_colorNormal="@color/colorPrimary"
+                        app:pb_colorPressed="@color/colorPrimaryDark"
+                        app:pb_cornerRadius="10dp"
+                        android:text="Update"/>
 
-            <com.dd.processbutton.FlatButton
-                    android:id="@+id/btn_Add"
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textColor="@android:color/white"
-                    app:pb_colorNormal="@color/fbutton_color_green_sea"
-                    app:pb_colorPressed="@color/colorPrimaryDark"
-                    app:pb_cornerRadius="10dp"
-                    android:text="Add"/>
+                <com.dd.processbutton.FlatButton
+                        android:id="@+id/btn_Add"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@android:color/white"
+                        app:pb_colorNormal="@color/colorPrimary"
+                        app:pb_colorPressed="@color/colorPrimaryDark"
+                        app:pb_cornerRadius="10dp"
+                        android:text="Add"/>
 
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

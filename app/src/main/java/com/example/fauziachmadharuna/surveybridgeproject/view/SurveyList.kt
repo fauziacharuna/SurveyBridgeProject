@@ -1,18 +1,21 @@
-package com.example.fauziachmadharuna.surveybridgeproject
+package com.example.fauziachmadharuna.surveybridgeproject.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import com.example.fauziachmadharuna.surveybridgeproject.R
+import com.example.fauziachmadharuna.surveybridgeproject.core.SurveyActivity
 import com.example.fauziachmadharuna.surveybridgeproject.adapter.SurveyAdapter
 import com.example.fauziachmadharuna.surveybridgeproject.model.SurveyModel
 import com.google.firebase.firestore.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fab.*
 
 class SurveyList : AppCompatActivity() {
     private val TAG = "SurveyListActivity"
@@ -20,16 +23,26 @@ class SurveyList : AppCompatActivity() {
 
     private var firestoreDB: FirebaseFirestore? = null
     private var firestoreListener: ListenerRegistration? = null
+    private var fabAdd : FloatingActionButton? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.survey_list_activity)
+        setSupportActionBar(findViewById(R.id.toolbar))
+        //home navigation
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
+       fab.setOnClickListener{
+
+           val intent = Intent(this, SurveyActivity::class.java)
+           startActivity(intent)
+       }
 
         firestoreDB = FirebaseFirestore.getInstance()
 
         loadSurveyList()
 
-        firestoreListener = firestoreDB!!.collection("SUrveyBridge")
+        firestoreListener = firestoreDB!!.collection("SurveyBridge")
             .addSnapshotListener(EventListener { documentSnapshot, e ->
                 if (e != null) {
                     Log.e(TAG, "Listen Failed!", e)
@@ -46,6 +59,7 @@ class SurveyList : AppCompatActivity() {
                     }
                 }
                 mAdapter = SurveyAdapter(surveyList, applicationContext, firestoreDB!!)
+                mAdapter!!.notifyDataSetChanged()
                 rvSurveyList.adapter = mAdapter
             })
     }
@@ -57,13 +71,13 @@ class SurveyList : AppCompatActivity() {
     }
 
     private fun loadSurveyList() {
-        firestoreDB!!.collection("SUrveyBridge")
+        firestoreDB!!.collection("SurveyBridge")
             .get()
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val surveyList = mutableListOf<SurveyModel>()
 
-                    for (doc in task.result) {
+                    for (doc in task.result!!) {
                         val survey = doc.toObject<SurveyModel>(SurveyModel::class.java)
                         survey.id = doc.id
                         surveyList.add(survey)

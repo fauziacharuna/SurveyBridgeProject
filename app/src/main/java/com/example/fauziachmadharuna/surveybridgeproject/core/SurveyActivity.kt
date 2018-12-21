@@ -1,17 +1,16 @@
-package com.example.fauziachmadharuna.surveybridgeproject
+package com.example.fauziachmadharuna.surveybridgeproject.core
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.Menu
 import android.view.View
 import android.widget.Button
-import android.widget.ProgressBar
 import android.widget.Toast
+import com.example.fauziachmadharuna.surveybridgeproject.R
 import com.example.fauziachmadharuna.surveybridgeproject.model.SurveyModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_survey.*
-import kotlinx.android.synthetic.main.item_layout.*
 
 class SurveyActivity : AppCompatActivity() {
     private val TAG = "AddSurveyActivity"
@@ -24,12 +23,17 @@ class SurveyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_survey)
+        setSupportActionBar(findViewById(R.id.toolbar))
+        //home navigation
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
 
         firestoreDB = FirebaseFirestore.getInstance()
 
-        val bundle = intent.extras
+        var bundle = intent.extras
         if (bundle != null) {
-//            id = bundle.getString("Update SurveyID")
+            id = bundle.getString("Update SurveyID")
 
             et_bridgeName.setText(bundle.getString("UpdateBridgeName"))
             et_bridgeLocation.setText(bundle.getString("UpdateBridgeLocation"))
@@ -115,7 +119,7 @@ class SurveyActivity : AppCompatActivity() {
             kerusakan
         ).toMap()
 
-        firestoreDB!!.collection("SUrveyBridge")
+        firestoreDB!!.collection("SurveyBridge")
             .document(id)
             .set(survey)
             .addOnSuccessListener {
@@ -148,9 +152,8 @@ class SurveyActivity : AppCompatActivity() {
             bahan,
             kerusakan
         ).toMap()
-        var data : String = ""
 
-        firestoreDB!!.collection("SUrveyBridge")
+        firestoreDB!!.collection("SurveyBridge")
 
             .add(survey)
             .addOnSuccessListener { documentReference ->
@@ -162,5 +165,10 @@ class SurveyActivity : AppCompatActivity() {
                 Log.e(TAG, "Error adding survey document", e)
                 Toast.makeText(applicationContext, "Survey couldn't added!", Toast.LENGTH_SHORT).show()
             }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return true
     }
 }

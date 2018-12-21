@@ -2,23 +2,25 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:orientation="vertical"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content">
-        <include layout="@layout/toolbar"/>
-
+                  android:layout_height="match_parent">
+        <include layout="@layout/toolbar"></include>
         <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:id="@+id/rvSurveyList"
+                                                android:id="@+id/rv_enginerList"
                                                 android:layout_margin="10dp"
                                                 android:padding="5dp"
                                                 android:scrollbars="vertical">
 
         </android.support.v7.widget.RecyclerView>
-        <include layout="@layout/fab"></include>
+        <include layout="@layout/fab"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+        </include>
+
+
     </LinearLayout>
-
-
 </ScrollView>

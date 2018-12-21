@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.fauziachmadharuna.surveybridgeproject">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@drawable/ic_survey"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
-        <activity android:name=".SurveyList"
-        android:label="@string/app_name">
-
+            android:theme="@style/AppThemeNoActionBar">
+        <activity android:name=".view.HomeActivity"
+        android:label="Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SurveyActivity"></activity>
+        <activity android:name=".view.LoginActivity"
+        android:parentActivityName=".view.HomeActivity">
+        </activity>
+        <activity android:name=".view.SurveyList"
+        android:parentActivityName=".view.HomeActivity"
+        android:label="Survey List">
+
+
+        </activity>
+        <activity android:name=".core.SurveyActivity"
+                  android:label="Survey Form"
+        android:parentActivityName=".view.SurveyList">
+        </activity>
+        <activity android:name=".EngineerList"
+        android:parentActivityName=".view.HomeActivity">
+        </activity>
+        <activity android:name=".PlanningList"
+        android:parentActivityName=".view.HomeActivity">
+        </activity>
+        <activity android:name=".HomeList">
+        </activity>
+        <activity android:name=".BridgeList">
+        </activity>
     </application>
 
 </manifest>

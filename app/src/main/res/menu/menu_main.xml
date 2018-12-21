@@ -7,5 +7,10 @@
             android:icon="@drawable/ic_add_circle_black_24dp"
             android:title="Add"
             app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/shareEmail"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="Add"
+            app:showAsAction="ifRoom" />
 
 </menu>

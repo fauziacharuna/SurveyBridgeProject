@@ -30,129 +30,129 @@
 
     <!--Aliran Sungai Komponen -->
     <string name="AL_K_1">A liran Sungai</string>
-    <string name="AL_K_2"> Bangunan Pengaman</string>
-    <string name="AL_K_3"> Tanah Timbunan</string>
+    <string name="AL_K_2">Bangunan Pengaman</string>
+    <string name="AL_K_3">Tanah Timbunan</string>
 
     <!--Pelengkap-->
-    <string name="PL_K_1"> Bangunan Pelengkap</string>
+    <string name="PL_K_1">Bangunan Pelengkap</string>
 
     <!--Gelagar Utama Sub Komponen -->
-    <string name="GU_SK_1"> Lapisan Pelindung</string>
-    <string name="GU_SK_2"> Gelagar Induk</string>
-    <string name="GU_SK_3"> Sambungan </string>
+    <string name="GU_SK_1">Lapisan Pelindung</string>
+    <string name="GU_SK_2">Gelagar Induk</string>
+    <string name="GU_SK_3">Sambungan</string>
 
     <!--Gelagar Sekunder Sub Komponen -->
-    <string name="GS_SK_1"> Lapisan Pelindung</string>
-    <string name="GS_SK_2"> Gelagar Melintang</string>
-    <string name="GS_SK_3"> Sambungan</string>
+    <string name="GS_SK_1">Lapisan Pelindung</string>
+    <string name="GS_SK_2">Gelagar Melintang</string>
+    <string name="GS_SK_3">Sambungan</string>
 
     <!--Ikatan Angin Sub Komponen -->
-    <string name="IA_SK_1"> Lapisan Pelindung</string>
-    <string name="IA_SK_2"> Ikatan Angin Primer</string>
-    <string name="IA_SK_3"> Sambungan</string>
-    <string name="IA_SK_4"> Lapis Pelindung</string>
-    <string name="IA_SK_5"> Ikatan Angin Sekunder</string>
+    <string name="IA_SK_1">Lapisan Pelindung</string>
+    <string name="IA_SK_2">Ikatan Angin Primer</string>
+    <string name="IA_SK_3">Sambungan</string>
+    <string name="IA_SK_4">Lapis Pelindung</string>
+    <string name="IA_SK_5">Ikatan Angin Sekunder</string>
 
     <!--Jembatan Plat Sub Komponen -->
-    <string name="JP_SK_1"> Plat Beton Bertulang</string>
+    <string name="JP_SK_1">Plat Beton Bertulang</string>
 
     <!--Pelangkung Sub Komponen -->
-    <string name="PL_SK_1"> Bagian Pelengkung</string>
-    <string name="PL_SK_2"> Dinding Tegak Pelengkung</string>
+    <string name="PL_SK_1">Bagian Pelengkung</string>
+    <string name="PL_SK_2">Dinding Tegak Pelengkung</string>
 
     <!--Balok Pelengkung Sub Komponen -->
-    <string name="BP_SK_1"> Gelagar Balok Pelengkung</string>
-    <string name="BP_SK_2"> Balok Pelengkung</string>
+    <string name="BP_SK_1">Gelagar Balok Pelengkung</string>
+    <string name="BP_SK_2">Balok Pelengkung</string>
     <string name="BP_SK_3">Balok Vertical</string>
-    <string name="BP_SK_4"> Balok Melintang</string>
-    <string name="BP_SK_5"> Balok Pengaku Mendatar</string>
-    <string name="BP_SK_6"> Gelagar Balok Pelengkung</string>
-    <string name="BP_SK_7"> Sambungan Balok Pelengkung</string>
+    <string name="BP_SK_4">Balok Melintang</string>
+    <string name="BP_SK_5">Balok Pengaku Mendatar</string>
+    <string name="BP_SK_6">Gelagar Balok Pelengkung</string>
+    <string name="BP_SK_7">Sambungan Balok Pelengkung</string>
 
     <!--Rangka Sub Komponen -->
-    <string name="RK_SK_1"> Panel Rangka</string>
-    <string name="RK_SK_2"> Gelagar Penguat</string>
-    <string name="RK_SK_3"> Rnagka Pengaku</string>
-    <string name="RK_SK_4"> Raker - Penyokong</string>
-    <string name="RK_SK_5"> Pin Panel / Sycrclip</string>
-    <string name="RK_SK_6"> Clamp</string>
+    <string name="RK_SK_1">Panel Rangka</string>
+    <string name="RK_SK_2">Gelagar Penguat</string>
+    <string name="RK_SK_3">Rnagka Pengaku</string>
+    <string name="RK_SK_4">Raker - Penyokong</string>
+    <string name="RK_SK_5">Pin Panel / Sycrclip</string>
+    <string name="RK_SK_6">Clamp</string>
 
     <!--Dudukan Jembatan Sub Komponen -->
-    <string name="DK_SK_1"> Batang tepi Atas</string>
-    <string name="DK_SK_2"> Batang tepi Bawah</string>
-    <string name="DK_SK_3"> Batang Diagonal</string>
-    <string name="DK_SK_4"> Batang Vertical</string>
-    <string name="DK_SK_5"> Ikatan Angin Atas</string>
+    <string name="DK_SK_1">Batang tepi Atas</string>
+    <string name="DK_SK_2">Batang tepi Bawah</string>
+    <string name="DK_SK_3">Batang Diagonal</string>
+    <string name="DK_SK_4">Batang Vertical</string>
+    <string name="DK_SK_5">Ikatan Angin Atas</string>
 
     <!--Tumpuan Sub Komponen -->
-    <string name="TU_SK_1"> Ikatan Angin Bawah </string>
-    <string name="TU_SK_2"> Diafragma </string>
-    <string name="TU_SK_3"> Gelagar Melintang </string>
+    <string name="TU_SK_1">Ikatan Angin Bawah</string>
+    <string name="TU_SK_2">Diafragma</string>
+    <string name="TU_SK_3">Gelagar Melintang</string>
 
     <!--Dinding Sayap Jembatan Sub Komponen -->
-    <string name="DS_SK_1"> Sambungan/Plat Bahul</string>
-    <string name="DS_SK_2"> Baut</string>
-    <string name="DS_SK_3"> Batang Tengah</string>
-    <string name="DS_SK_4"> Batang Diagonal Kecil</string>
+    <string name="DS_SK_1">Sambungan/Plat Bahul</string>
+    <string name="DS_SK_2">Baut</string>
+    <string name="DS_SK_3">Batang Tengah</string>
+    <string name="DS_SK_4">Batang Diagonal Kecil</string>
 
     <!--Jembatan Gantung Sub Komponen -->
-    <string name="JG_SK_1"> Kabel Pemikul</string>
-    <string name="JG_SK_2"> Kabel Penggantung</string>
-    <string name="JG_SK_3"> Kabel Penahan Ayun</string>
-    <string name="JG_SK_4"> Kolom Pylon</string>
-    <string name="JG_SK_5"> Pengaku Pylon</string>
-    <string name="JG_SK_6"> Sadel Pylon</string>
-    <string name="JG_SK_7"> Balok Melintang</string>
-    <string name="JG_SK_8"> Ikatan Angin Bawah</string>
-    <string name="JG_SK_9"> Sambungan</string>
+    <string name="JG_SK_1">Kabel Pemikul</string>
+    <string name="JG_SK_2">Kabel Penggantung</string>
+    <string name="JG_SK_3">Kabel Penahan Ayun</string>
+    <string name="JG_SK_4">Kolom Pylon</string>
+    <string name="JG_SK_5">Pengaku Pylon</string>
+    <string name="JG_SK_6">Sadel Pylon</string>
+    <string name="JG_SK_7">Balok Melintang</string>
+    <string name="JG_SK_8">Ikatan Angin Bawah</string>
+    <string name="JG_SK_9">Sambungan</string>
 
     <!--Sistem Lantai Sub Komponen -->
-    <string name="SL_SK_1"> Gelagar Memanjang Lantai</string>
-    <string name="SL_SK_2"> Plat Lantai</string>
-    <string name="SL_SK_3"> Plat Baja Bergelombang</string>
-    <string name="SL_SK_4"> Balok Tepi</string>
-    <string name="SL_SK_5"> Jalur Roda Kendaraan</string>
-    <string name="SL_SK_6"> Trotoar/Kerb</string>
-    <string name="SL_SK_7"> Pipa Cucuran</string>
-    <string name="SL_SK_8"> Drainase Lantai</string>
-    <string name="SL_SK_9"> Lapis Permukaan</string>
+    <string name="SL_SK_1">Gelagar Memanjang Lantai</string>
+    <string name="SL_SK_2">Plat Lantai</string>
+    <string name="SL_SK_3">Plat Baja Bergelombang</string>
+    <string name="SL_SK_4">Balok Tepi</string>
+    <string name="SL_SK_5">Jalur Roda Kendaraan</string>
+    <string name="SL_SK_6">Trotoar/Kerb</string>
+    <string name="SL_SK_7">Pipa Cucuran</string>
+    <string name="SL_SK_8">Drainase Lantai</string>
+    <string name="SL_SK_9">Lapis Permukaan</string>
 
     <!--Siar Muai Sub Komponen -->
-    <string name="SM_SK_1"> Siar Muai Baja</string>
-    <string name="SM_SK_2"> Siar Muai Baja Profil</string>
-    <string name="SM_SK_3"> Siar Muai Karetl</string>
-    <string name="SM_SK_4"> Sambungan</string>
+    <string name="SM_SK_1">Siar Muai Baja</string>
+    <string name="SM_SK_2">Siar Muai Baja Profil</string>
+    <string name="SM_SK_3">Siar Muai Karetl</string>
+    <string name="SM_SK_4">Sambungan</string>
 
     <!--Landasan/Peletakan Sub Komponen-->
-    <string name="LP_SK_1"> Perletakan baja</string>
-    <string name="LP_SK_2"> Perletakan Karet</string>
-    <string name="LP_SK_3"> Bantalan mortar/plat dasar</string>
-    <string name="LP_SK_4"> Baut Pengikat</string>
-    <string name="LP_SK_5"> Tiang  Sandaran</string>
-    <string name="LP_SK_6"> Sandaran horizontal</string>
-    <string name="LP_SK_7"> Penunjang sandaran</string>
-    <string name="LP_SK_8"> Perapet/Tembok sedada</string>
+    <string name="LP_SK_1">Perletakan baja</string>
+    <string name="LP_SK_2">Perletakan Karet</string>
+    <string name="LP_SK_3">Bantalan mortar/plat dasar</string>
+    <string name="LP_SK_4">Baut Pengikat</string>
+    <string name="LP_SK_5">Tiang Sandaran</string>
+    <string name="LP_SK_6">Sandaran horizontal</string>
+    <string name="LP_SK_7">Penunjang sandaran</string>
+    <string name="LP_SK_8">Perapet/Tembok sedada</string>
 
     <!--Pondasi Sub Komponen -->
-    <string name="PO_SK_1"> Tiang  pancang</string>
-    <string name="PO_SK_2">Pondasi sumuran </string>
-    <string name="PO_SK_3">Pondasi langsung </string>
-    <string name="PO_SK_4">Angker </string>
-    <string name="PO_SK_5"> Pondasi balok pelengkung</string>
+    <string name="PO_SK_1">Tiang pancang</string>
+    <string name="PO_SK_2">Pondasi sumuran</string>
+    <string name="PO_SK_3">Pondasi langsung</string>
+    <string name="PO_SK_4">Angker</string>
+    <string name="PO_SK_5">Pondasi balok pelengkung</string>
 
     <!--Kepala Jembatan/Pilar Sub Komponen -->
-    <string name="KJ_SK_1"> Kepala  tiang</string>
-    <string name="KJ_SK_2"> Pilar dinding/kolom</string>
-    <string name="KJ_SK_3"> Dinding penahan tanah kepala  jembatan  dinding/tembok </string>
-    <string name="KJ_SK_4"> Tembok sayap</string>
-    <string name="KJ_SK_5"> Balok kepala</string>
-    <string name="KJ_SK_6"> Balok penahan gempa</string>
-    <string name="KJ_SK_7"> Penunjang/pengaku</string>
-    <string name="KJ_SK_8"> Penunjang sementara</string>
-    <string name="KJ_SK_9"> Drainase  dinding</string>
+    <string name="KJ_SK_1">Kepala tiang</string>
+    <string name="KJ_SK_2">Pilar dinding/kolom</string>
+    <string name="KJ_SK_3">Dinding penahan tanah kepala jembatan dinding/tembok</string>
+    <string name="KJ_SK_4">Tembok sayap</string>
+    <string name="KJ_SK_5">Balok kepala</string>
+    <string name="KJ_SK_6">Balok penahan gempa</string>
+    <string name="KJ_SK_7">Penunjang/pengaku</string>
+    <string name="KJ_SK_8">Penunjang sementara</string>
+    <string name="KJ_SK_9">Drainase dinding</string>
 
     <!--Aliran Sungai Sub Komponen -->
-    <string name="AS_SK_1">Tebing  Sungai</string>
+    <string name="AS_SK_1">Tebing Sungai</string>
     <string name="AS_SK_2">Aliran Air Utama</string>
     <string name="AS_SK_3">Daerah Genangan Banjir</string>
 
@@ -164,7 +164,7 @@
     <string name="BPE_SK_5">Turab baja</string>
     <string name="BPE_SK_6">Sistem fender</string>
     <string name="BPE_SK_7">Dinding penahan tanah</string>
-    <string name="BPE_SK_8">Pengamanan dasar  sungai</string>
+    <string name="BPE_SK_8">Pengamanan dasar sungai</string>
 
     <!--Tanah Timbunan Sub Komponen -->
     <string name="TT_SK_1">Timbunan oprit</string>
@@ -181,7 +181,7 @@
     <string name="BPL_SK_5">Patung</string>
     <string name="BPL_SK_6">Lampu Penerangan</string>
     <string name="BPL_SK_7">Lampu Penerangan</string>
-    <string name="BPL_SK_8">Kabel  Listrik</string>
+    <string name="BPL_SK_8">Kabel Listrik</string>
     <string name="BPL_SK_9">Utilitas</string>
     <string name="BPL_SK_10">Median</string>
 
@@ -190,6 +190,17 @@
     <string name="BHN_2">Beton</string>
     <string name="BHN_3">Baja</string>
     <string name="BHN_4">Kayu</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
 
 
 </resources>

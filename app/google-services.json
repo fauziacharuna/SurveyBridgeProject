@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "391190278277",
-    "firebase_url": "https://androbridgejson.firebaseio.com",
-    "project_id": "androbridgejson",
-    "storage_bucket": "androbridgejson.appspot.com"
+    "project_number": "31016896250",
+    "firebase_url": "https://androbridge-ccb7f.firebaseio.com",
+    "project_id": "androbridge-ccb7f",
+    "storage_bucket": "androbridge-ccb7f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:391190278277:android:0b67acbbcb869a4a",
+        "mobilesdk_app_id": "1:31016896250:android:0b67acbbcb869a4a",
         "android_client_info": {
           "package_name": "com.example.fauziachmadharuna.surveybridgeproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "391190278277-okj2lg1fk069gmi8o4ng32tr0oavo82a.apps.googleusercontent.com",
+          "client_id": "31016896250-8k5d4bvclcl9rtne7vbf034oerofeuen.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.fauziachmadharuna.surveybridgeproject",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+          "client_id": "31016896250-2i5gvbgnmd9ue3va79t31tv6gokf01lr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCG0PBN7qzdITyNxT5Co_EvZYttMrmmQy0"
+          "current_key": "AIzaSyBqR3E-bb5DqiDG_v4XS5y1IssY7gXdOs8"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+              "client_id": "31016896250-2i5gvbgnmd9ue3va79t31tv6gokf01lr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -52,28 +52,28 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:391190278277:android:ad4c636a793ee862",
+        "mobilesdk_app_id": "1:31016896250:android:fa3b4c94fae05a36",
         "android_client_info": {
-          "package_name": "com.farifam.kotlinfirestore"
+          "package_name": "com.happycity.project.todofirestore"
         }
       },
       "oauth_client": [
         {
-          "client_id": "391190278277-0hm7mra9re907h2ceebthnua2pa2gn6g.apps.googleusercontent.com",
+          "client_id": "31016896250-d46io2hms4e0qstp90i6cbq5e73mh2qi.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.farifam.kotlinfirestore",
+            "package_name": "com.happycity.project.todofirestore",
             "certificate_hash": "11bee3f5e5463b7b7f9a53ec12fe406b25588748"
           }
         },
         {
-          "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+          "client_id": "31016896250-2i5gvbgnmd9ue3va79t31tv6gokf01lr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCG0PBN7qzdITyNxT5Co_EvZYttMrmmQy0"
+          "current_key": "AIzaSyBqR3E-bb5DqiDG_v4XS5y1IssY7gXdOs8"
         }
       ],
       "services": {
@@ -84,7 +84,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "391190278277-gnh7401v9jmgfqqqvfpf0skqi5q6t4gq.apps.googleusercontent.com",
+              "client_id": "31016896250-2i5gvbgnmd9ue3va79t31tv6gokf01lr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
