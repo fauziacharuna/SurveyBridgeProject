@@ -38,7 +38,7 @@
                         app:met_maxCharacters="100"
                         app:met_floatingLabelAnimating="true"
                         app:met_floatingLabel="highlight"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textPersonName"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
@@ -51,7 +51,7 @@
                         app:met_floatingLabelAnimating="true"
                         app:met_primaryColor="@color/colorPrimaryDark"
                         app:met_floatingLabel="highlight"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textMultiLine"/>
                 <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/et_surveyorName"
@@ -63,7 +63,7 @@
                         app:met_floatingLabelAnimating="true"
                         app:met_floatingLabel="highlight"
                         android:layout_marginTop="5dp"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textPersonName"/>
             </LinearLayout>
 
@@ -90,7 +90,7 @@
                         app:met_floatingLabel="highlight"
                         app:met_floatingLabelText="Sistem"
                         android:layout_marginTop="5dp"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textPersonName"/>
                 <!--<android.support.design.card.MaterialCardView android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content" android:id="@+id/cv_sistem" app:cardCornerRadius="10dp">-->
@@ -119,7 +119,7 @@
                         app:met_floatingLabel="highlight"
                         app:met_floatingLabelText="Komponen"
                         android:layout_marginTop="5dp"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textPersonName"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
@@ -131,7 +131,7 @@
                         app:met_floatingLabel="highlight"
                         app:met_floatingLabelText="Sub Komponen"
                         android:layout_marginTop="5dp"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textPersonName"/>
 
 
@@ -144,7 +144,7 @@
                         app:met_floatingLabel="highlight"
                         app:met_floatingLabelText="Bahan"
                         android:layout_marginTop="5dp"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textPersonName"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
@@ -156,7 +156,7 @@
                         app:met_floatingLabel="highlight"
                         app:met_floatingLabelText="Kerusakan"
                         android:layout_marginTop="5dp"
-                        app:met_floatingLabelTextColor="@color/labelFloat"
+                        app:met_floatingLabelTextColor="@color/fbutton_color_peter_river"
                         android:inputType="textMultiLine"/>
 
             </LinearLayout>

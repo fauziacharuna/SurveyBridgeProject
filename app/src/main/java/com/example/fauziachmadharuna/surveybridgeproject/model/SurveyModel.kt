@@ -58,6 +58,21 @@ class SurveyModel {
         this.kerusakan = kerusakan
     }
 
+    constructor(bridgeName: String?, bridgeLocation: String?, kerusakan: String?) {
+        this.bridgeName = bridgeName
+        this.bridgeLocation = bridgeLocation
+        this.kerusakan = kerusakan
+    }
+
+    fun toMapSurvey() : Map<String,Any>{
+        val result=HashMap<String, Any>()
+        result.put("BridgeName",bridgeName!!)
+        result.put("BridgeLocation",bridgeLocation!!)
+        result.put("Kerusakan",kerusakan!!)
+
+        return result
+    }
+
     fun toMap(): Map<String, Any> {
         val result = HashMap<String, Any>()
         result.put("BridgeName", bridgeName!!)

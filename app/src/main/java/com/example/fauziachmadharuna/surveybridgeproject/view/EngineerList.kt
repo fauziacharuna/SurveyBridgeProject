@@ -1,4 +1,4 @@
-package com.example.fauziachmadharuna.surveybridgeproject
+package com.example.fauziachmadharuna.surveybridgeproject.view
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -7,15 +7,15 @@ import android.support.design.widget.FloatingActionButton
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import com.example.fauziachmadharuna.surveybridgeproject.R
 import com.example.fauziachmadharuna.surveybridgeproject.adapter.EngineerAdapter
-import com.example.fauziachmadharuna.surveybridgeproject.adapter.SurveyAdapter
 import com.example.fauziachmadharuna.surveybridgeproject.core.EngineerActivity
 import com.example.fauziachmadharuna.surveybridgeproject.model.EngineerModel
 import com.google.firebase.firestore.EventListener
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.engineer_list_activity.*
+import kotlinx.android.synthetic.main.fab.*
 
 class EngineerList : AppCompatActivity() {
     private val TAG = "EngineerListActivity"
@@ -23,19 +23,18 @@ class EngineerList : AppCompatActivity() {
 
     private var firestoreDB: FirebaseFirestore? = null
     private var firestoreListener: ListenerRegistration? = null
-    private var fabtombol : FloatingActionButton? =null
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.engineer_list_activity)
+        setSupportActionBar(findViewById(R.id.toolbar))
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         firestoreDB = FirebaseFirestore.getInstance()
-        fabtombol=findViewById(R.id.fab)
-        fabtombol!!.setOnClickListener{view ->
+        fab!!.setOnClickListener{view ->
             val intent = Intent(this, EngineerActivity::class.java)
             startActivity(intent)
         }

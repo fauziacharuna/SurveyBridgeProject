@@ -28,6 +28,11 @@ class EngineerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.engineer_activity)
 
+        setSupportActionBar(findViewById(R.id.toolbar))
+        //home navigation
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
+
         firestoreDB = FirebaseFirestore.getInstance()
 
         var bundle = intent.extras
@@ -38,9 +43,9 @@ class EngineerActivity : AppCompatActivity() {
         }
         val clickListener = View.OnClickListener{ view ->
             val name= et_engineerName.text.toString()
-            val jobs=et_engineerJobs.text.toString()
+            val jabatan=et_engineerJobs.text.toString()
             when(view.id){
-                R.id.btn_Add_Engineer -> addEngineer(name,jobs)
+                R.id.btn_Add_Engineer -> addEngineer(name,jabatan)
             }
 
 
@@ -52,8 +57,8 @@ class EngineerActivity : AppCompatActivity() {
 
     }
 
-    private fun addEngineer(name: String, jobs: String) {
-        var engineer = EngineerModel(name,jobs).toMap()
+    private fun addEngineer(name: String, jabatan: String) {
+        var engineer = EngineerModel(name,jabatan).toMap()
 
         firestoreDB!!.collection("SurveyBridge").document("engineer").collection("listEngineer")
             .add(engineer)

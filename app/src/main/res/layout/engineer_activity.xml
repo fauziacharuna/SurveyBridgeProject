@@ -43,14 +43,14 @@
                         android:id="@+id/et_engineerJobs"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:met_floatingLabelText="Bridge Location"
+                        app:met_floatingLabelText="Jobs"
                         android:layout_marginTop="5dp"
                         app:met_singleLineEllipsis="true"
                         app:met_floatingLabelAnimating="true"
                         app:met_primaryColor="@color/colorPrimaryDark"
                         app:met_floatingLabel="highlight"
                         app:met_floatingLabelTextColor="@color/colorPrimary"
-                        android:inputType="textMultiLine"/>
+                        android:inputType="textAutoComplete"/>
                 <com.dd.processbutton.FlatButton
                         android:id="@+id/btn_Add_Engineer"
                         android:layout_gravity="center_horizontal"

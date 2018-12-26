@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_settings"
+          android:title="Setting"
+          android:icon="@drawable/ic_dots_24dp"/>
+    <item android:id="@+id/logout"
+          android:title="Logout"
+          android:icon="@drawable/ic_dots_24dp"/>
+    <item android:id="@+id/exit"
+          android:title="Exit"
+          android:icon="@drawable/ic_dots_24dp"/>
 
-    <item
-            android:id="@+id/addSurvey"
-            android:icon="@drawable/ic_add_circle_black_24dp"
-            android:title="Add"
-            app:showAsAction="ifRoom" />
-    <item
-            android:id="@+id/shareEmail"
-            android:icon="@drawable/ic_email_black_24dp"
-            android:title="Add"
-            app:showAsAction="ifRoom" />
+
+
+
 
 </menu>

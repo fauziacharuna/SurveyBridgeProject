@@ -14,8 +14,8 @@ import com.example.fauziachmadharuna.surveybridgeproject.core.SurveyActivity
 import com.example.fauziachmadharuna.surveybridgeproject.adapter.SurveyAdapter
 import com.example.fauziachmadharuna.surveybridgeproject.model.SurveyModel
 import com.google.firebase.firestore.*
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fab.*
+import kotlinx.android.synthetic.main.survey_list_activity.*
 
 class SurveyList : AppCompatActivity() {
     private val TAG = "SurveyListActivity"
@@ -103,10 +103,19 @@ class SurveyList : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item != null) {
-            if (item.itemId == R.id.addSurvey) {
-                val intent = Intent(this, SurveyActivity::class.java)
-                startActivity(intent)
+//        if (item != null) {
+//            if (item.itemId == R.id.addSurvey) {
+//                val intent = Intent(this, SurveyActivity::class.java)
+//                startActivity(intent)
+//            }
+//        }
+
+        when (item!!.itemId){
+//            R.id.logOut->{
+//
+//            }
+            R.id.action_settings ->{
+
             }
         }
         return super.onOptionsItemSelected(item)

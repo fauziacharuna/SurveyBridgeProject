@@ -26,14 +26,14 @@ class SurveyActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         //home navigation
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
 
 
         firestoreDB = FirebaseFirestore.getInstance()
 
         var bundle = intent.extras
         if (bundle != null) {
-            id = bundle.getString("Update SurveyID")
+//            id = bundle.getString("Update SurveyID")
 
             et_bridgeName.setText(bundle.getString("UpdateBridgeName"))
             et_bridgeLocation.setText(bundle.getString("UpdateBridgeLocation"))
@@ -90,12 +90,7 @@ class SurveyActivity : AppCompatActivity() {
 
             val btnAdd = findViewById<Button>(R.id.btn_Add)
             btnAdd.setOnClickListener(clickListener)
-
-
-
     }
-
-
     private fun updateSurvey(
         id: String,
         bridgeName: String,

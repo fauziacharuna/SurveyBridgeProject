@@ -13,7 +13,6 @@ import com.example.fauziachmadharuna.surveybridgeproject.R
 import com.example.fauziachmadharuna.surveybridgeproject.core.EngineerActivity
 import com.example.fauziachmadharuna.surveybridgeproject.model.EngineerModel
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.engineer_list_activity.view.*
 
 class EngineerAdapter(
     private val engineerList: MutableList<EngineerModel>,
@@ -45,7 +44,7 @@ class EngineerAdapter(
 
     }
     private fun deleteEngineer(id: String, position: Int){
-        firestoreDB.collection("SurveyBridge").document("engineer").collection("engineerList")
+        firestoreDB.collection("SurveyBridge").document("engineer").collection("listEngineer")
             .document(id)
             .delete()
             .addOnCompleteListener{
@@ -68,8 +67,8 @@ class EngineerAdapter(
         internal var delete : ImageView
 
         init {
-            nameText=view.findViewById(R.id.et_engineerName)
-            jobText=view.findViewById(R.id.et_engineerJobs)
+            nameText=view.findViewById(R.id.tv_engineer)
+            jobText=view.findViewById(R.id.tv_jobs)
 
             edit=view.findViewById(R.id.ivEdit)
             delete=view.findViewById(R.id.ivDelete)

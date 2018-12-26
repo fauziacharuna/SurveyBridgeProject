@@ -1,19 +1,14 @@
-package com.example.fauziachmadharuna.surveybridgeproject.view
+package com.example.fauziachmadharuna.surveybridgeproject.core
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
 import android.content.Intent
-import android.os.PersistableBundle
-import android.text.TextUtils
-import android.util.Log
-import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.example.fauziachmadharuna.surveybridgeproject.R
-import com.example.fauziachmadharuna.surveybridgeproject.core.MainActivity
+import com.example.fauziachmadharuna.surveybridgeproject.view.HomeActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -40,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-//        findViewById(R.id.email_sign_in_button).setOnClickListener { validateLogin() }
+        btn_signin.setOnClickListener { validateLogin() }
 
     }
 
@@ -65,6 +60,33 @@ class LoginActivity : AppCompatActivity() {
             inputPassword.error = REQUIRED
         } else {
             login.go(inputEmail.text.toString(), inputPassword.text.toString())
+        }
+    }
+    abstract class LoginManager(val auth: FirebaseAuth) {
+        val mAuthListener = FirebaseAuth.AuthStateListener({ firebaseAuth ->
+            val user = firebaseAuth.currentUser
+            if (user != null) isSuccessLogin()
+        })
+
+        abstract fun isSuccessLogin()
+
+        fun go(email: String, password: String) {
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener { complete ->
+                    if (!complete.isSuccessful) isFailedLogin()
+                }
+        }
+
+        abstract fun isFailedLogin()
+
+        fun onStart() {
+            auth.addAuthStateListener(mAuthListener)
+        }
+
+        fun onStop() {
+            if (mAuthListener != null) {
+                auth.removeAuthStateListener(mAuthListener)
+            }
         }
     }
 }

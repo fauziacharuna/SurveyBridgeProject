@@ -11,39 +11,45 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:roundIcon="@drawable/ic_survey"
+            android:icon="@mipmap/ic_survey_launcher"
+            android:roundIcon="@mipmap/ic_survey_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".view.HomeActivity"
-        android:label="Menu">
+        <activity android:name=".core.LoginActivity"
+                  android:label="Bridge Monitoring System">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".view.LoginActivity"
-        android:parentActivityName=".view.HomeActivity">
+        <activity android:name=".view.HomeActivity"
+                  android:label="Bridge Monitoring System"></activity>
+        <activity android:name=".view.SurveyView"
+        android:label="Survey Form">
+
         </activity>
+
         <activity android:name=".view.SurveyList"
-        android:parentActivityName=".view.HomeActivity"
-        android:label="Survey List">
+                  android:parentActivityName=".view.HomeActivity"
+                  android:label="Survey List">
 
 
         </activity>
         <activity android:name=".core.SurveyActivity"
                   android:label="Survey Form"
-        android:parentActivityName=".view.SurveyList">
+                  android:parentActivityName=".view.SurveyList">
         </activity>
-        <activity android:name=".EngineerList"
-        android:parentActivityName=".view.HomeActivity">
+        <activity android:name=".view.EngineerList"
+                  android:parentActivityName=".view.HomeActivity">
         </activity>
+        <activity android:name=".core.EngineerActivity"
+                  android:label="Add/Edit Engineer Form"
+        android:parentActivityName=".view.EngineerList"/>
         <activity android:name=".PlanningList"
-        android:parentActivityName=".view.HomeActivity">
+                  android:parentActivityName=".view.HomeActivity">
         </activity>
-        <activity android:name=".HomeList">
-        </activity>
+
         <activity android:name=".BridgeList">
         </activity>
     </application>
