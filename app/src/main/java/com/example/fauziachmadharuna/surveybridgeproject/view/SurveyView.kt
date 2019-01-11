@@ -96,6 +96,8 @@ class SurveyView : AppCompatActivity(){
                 holder.textBridgeLocation.text=survey.bridgeLocation
                 holder.textKerusakan.text=survey.kerusakan
 
+                Log.d(TAG, "Bridge Name = ${survey.bridgeName}" )
+
                 holder.imgEdit.setOnClickListener{editSurvey(survey)}
                 holder.imgDelete.setOnClickListener{deleteSurvey(survey.id!!)}
 
